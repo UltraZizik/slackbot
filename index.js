@@ -78,7 +78,7 @@ app.command("/dzb-translatetomylanguage", async ({ command, ack, respond }) => {
   try {
     console.log("Sending text to Google TranslateAPI");
     const result = await translate(command.text, { to: 'cs' });
-    await respond({ text: `In my (Czech) language it is: ${result.text}` });
+    await respond({ text: `In my (🇨🇿) language it is: ${result.text}` });
     console.log("Translation result:", result.text);
   } catch (err) {
     await respond({ text: "I didnt know how but im unable to translate that" });
@@ -108,7 +108,7 @@ app.command("/zizik-translator", async ({ command, ack, respond }) => {
   //this is the same as before
   try {
     const result = await translate(textToTranslate, { to: lang });
-    await respond({ text: `Translation: ${result.text}` });
+    await respond({ text: `🌍Translation: ${result.text}` });
   } catch (err) {
     await respond({ text: "I didnt know how but im unable to translate that" });
   }
