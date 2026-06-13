@@ -217,4 +217,5 @@ No license
 
 ---
 
-**Enjoy your Slack bot! 🎉**
+**there can be older code or some msitakes so be kind or report them immediately**
+
