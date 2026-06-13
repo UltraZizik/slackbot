@@ -76,7 +76,7 @@ Because they make up everything!
 
 ### 🇨🇿 Translate to Czech
 ```
-/zizik-translatetomylanguage Hello world - this is exymple
+/zizik-translatetomylanguage Hello world - this is example
 ```
 Translate any text into Czech automatically.
 
@@ -114,10 +114,14 @@ Translate text to any language in the world!
 
 **Examples:**
 ```
-/zizik-translator es Hello world          # Spanish
-/zizik-translator fr Bonjour              # French
-/zizik-translator ja こんにちは            # Japanese
-/zizik-translator de Hallo Welt           # German
+/zizik-translator es Hello world             # Spanish
+Translation: Hola Mundo
+/zizik-translator fr Hello world             # French
+Translation: Bonjour le monde
+/zizik-translator ja Hello world             # Japanese
+Translation: こんにちは世界
+/zizik-translator de Hello world             # German
+Translation: Hallo Welt
 ```
 
 **Code Snippet:**
