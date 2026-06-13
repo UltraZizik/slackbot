@@ -185,6 +185,7 @@ app.command("/zizik-isssatellites", async ({ command, ack, respond }) => {
 ```
 /zizik-help
 ```
+<img width="773" height="204" alt="Snímek obrazovky 2026-06-13 180021" src="https://github.com/user-attachments/assets/6bbb9758-b76b-4a69-bafc-a742ec361447" />
 Help is just simply help it helps you out with commands!
 
 ## 🛠️ Tech Stack
