@@ -16,7 +16,7 @@ app.command("/zizik-ping", async ({ command, ack, respond }) => {
   const start = Date.now();
   await ack();
   const latency = Date.now() - start;
-  await respond({ text: `Pong!\nLatency: ${latency}ms` });
+  await respond({ text: `🏓 Pong!\n⚡ Latency: ${latency}ms` });
 });
 
 (async () => {
@@ -28,13 +28,13 @@ app.command("/zizik-help", async ({ ack, respond }) => {
   await ack();
   await respond({
     text:
-`Available Commands:
-/zizik-ping - Check bot latency
-/zizik-catfact - Get a cat fact
-/zizik-joke - Get a random joke
-/zizik-translatetomylanguage - Translate text to my language
-/zizik-translator - first specify you language and leave a space after it! Type anything you want after that.
-/zizik-isssatelites
+`🤖 Available Commands:
+🏓 /zizik-ping - Check bot latency
+🐱 /zizik-catfact - Get a cat fact
+😂 /zizik-joke - Get a random joke
+🇨🇿 /zizik-translatetomylanguage - Translate text to my language
+🌍 /zizik-translator - First specify your language and then type the text after a space.
+🛰️ /zizik-isssatellites - Get the current ISS location
 `
   });
 });
@@ -44,7 +44,7 @@ app.command("/zizik-catfact", async ({ ack, respond }) => {
 
   try {
     const response = await axios.get("https://catfact.ninja/fact");
-    await respond({ text: `Cat Fact:\n${response.data.fact}` });
+    await respond({ text: `🐱 Cat Fact:\n${response.data.fact}` });
   } catch (err) {
     await respond({ text: "Failed to fetch a cat fact." });
   }
@@ -57,7 +57,7 @@ app.command("/zizik-joke", async ({ ack, respond }) => {
     const response = await axios.get("https://official-joke-api.appspot.com/random_joke");
     await respond({
       text:
-`${response.data.setup}
+`😂 ${response.data.setup}
 
 ${response.data.punchline}`
     });
@@ -119,7 +119,7 @@ app.command("/zizik-isssatellites", async ({ command, ack, respond }) => {
 
   try {
   const response = await axios.get("https://api.wheretheiss.at/v1/satellites/25544")
-  await respond({ text: `ISS Location: ${response.data.latitude}, ${response.data.longitude}` });
+  await respond({ text: `🛰️ ISS Location: ${response.data.latitude}, ${response.data.longitude}` });
   } catch (err) {
     await respond({ text: "I didnt know how but im unable to get ISS location" });
   }
