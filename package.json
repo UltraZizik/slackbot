@@ -1,0 +1,19 @@
+{
+  "name": "jakub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "slackbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@slack/bolt": "^4.7.3",
+    "axios": "^1.17.0",
+    "dotenv": "^17.4.2",
+    "google-translate-api-x": "^10.7.3"
+  }
+}
