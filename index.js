@@ -12,7 +12,7 @@ const app = new App({
   socketMode: true
 });
 //command from tutorial the starting point
-app.command("/dsb-zizikping", async ({ command, ack, respond }) => {
+app.command("/dzb-zizikping", async ({ command, ack, respond }) => {
   const start = Date.now();
   await ack();
   const latency = Date.now() - start;
@@ -24,22 +24,22 @@ app.command("/dsb-zizikping", async ({ command, ack, respond }) => {
   console.log("bot is running")
 })();
 //this is frm tutorial but it is mostly modified
-app.command("/dsb-help", async ({ ack, respond }) => {
+app.command("/dzb-zizikhelp", async ({ ack, respond }) => {
   await ack();
   await respond({
     text:
 `Available Commands:
-/dsb-zizikping - Check bot latency
-/dsb-zizikcatfact - Get a cat fact
-/dsb-zizikjoke - Get a random joke
-/dsb-translatetozizikslanguage - Translate text to Ziziks language
-/dsb-ziziktranslator - first specify you language and leave a space after it! Type anything you want after that.
-/dsb-isssatelites
+/dzb-zizikping - Check bot latency
+/dzb-zizikcatfact - Get a cat fact
+/dzb-zizikjoke - Get a random joke
+/dzb-translatetozizikslanguage - Translate text to Ziziks (Czech) language
+/dzb-ziziktranslator - first specify you language and leave a space after it! Type anything you want after that.
+/dzb-isssatelites
 `
   });
 });
 //this is from the tutorial and it makes a catfact
-app.command("/dsb-zizikcatfact", async ({ ack, respond }) => {
+app.command("/dzb-zizikcatfact", async ({ ack, respond }) => {
   await ack();
 
   try {
@@ -50,7 +50,7 @@ app.command("/dsb-zizikcatfact", async ({ ack, respond }) => {
   }
 });
 //this is from the tutorial and it makes a joke
-app.command("/dsb-zizikjoke", async ({ ack, respond }) => {
+app.command("/dzb-zizikjoke", async ({ ack, respond }) => {
   await ack();
 
   try {
@@ -66,7 +66,7 @@ ${response.data.punchline}`
   }
 });
 //this(not from th original tutorial) translates something from literally any language to Czech
-app.command("/dsb-translatetozizikslanguage", async ({ command, ack, respond }) => {
+app.command("/dzb-translatetozizikslanguage", async ({ command, ack, respond }) => {
   await ack();
   console.log("Received text to translate:", command.text);
   
@@ -85,7 +85,7 @@ app.command("/dsb-translatetozizikslanguage", async ({ command, ack, respond }) 
   }
 });
 //this makes you translate something into any language
-app.command("/dsb-ziziktranslator", async ({ command, ack, respond }) => {
+app.command("/dzb-ziziktranslator", async ({ command, ack, respond }) => {
   await ack();
 
   if(!command.text) {
@@ -114,7 +114,7 @@ app.command("/dsb-ziziktranslator", async ({ command, ack, respond }) => {
   }
 });
 //this tells you ISS location
-app.command("/dsb-isssatellites", async ({ command, ack, respond }) => {
+app.command("/dzb-isssatellites", async ({ command, ack, respond }) => {
   await ack(); 
 
   try {
