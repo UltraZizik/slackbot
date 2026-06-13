@@ -4,11 +4,11 @@ A okay slackbot that took me a long time to build and turned out okay!
 
 ## Features
 
-- 🏓 **Latency Checker** - Monitor bot responsiveness
-- 🐱 **Cat Facts** - Get random cat facts on demand
-- 😂 **Jokes** - Brighten up your day with random jokes
-- 🌍 **Translations** - Translate to any language or to Czech
-- 🛰️ **ISS Tracker** - Track the International Space Station location in real-time
+- 🏓 **Latency Checker** - ping-pong: measures latency.
+- 🐱 **Cat Facts** - random catfacts.
+- 😂 **Jokes** - random Jokes.
+- 🌍 **Translations** - Translate to any language or to my Czech language as im from Czech republic!
+- 🛰️ **ISS Tracker** - says where the ISS is.
 
 ##  Quick Start
 
@@ -44,7 +44,7 @@ node index.js
 ```
 /zizik-ping
 ```
-Get real-time latency measurements to ensure your bot is running smoothly.
+Get your latency so you know how fast your bot communicates or if there are any problems.
 
 **Response:**
 ```
@@ -58,13 +58,13 @@ Get real-time latency measurements to ensure your bot is running smoothly.
 ```
 /zizik-catfact
 ```
-Learn a new interesting fact about cats!
+Some random catfact for your day!
 
 ### 😂 Jokes - Random Humor
 ```
 /zizik-joke
 ```
-Get a random joke to make your team laugh!
+Random joke to make your family laugh!
 
 **Response:**
 ```
@@ -78,7 +78,7 @@ Because they make up everything!
 ```
 /zizik-translatetomylanguage Hello world - this is example
 ```
-Translate any text into Czech automatically.
+Translate any text into Czech automatically becasue why not?
 
 **Output:**
 ```
@@ -155,7 +155,7 @@ app.command("/zizik-translator", async ({ command, ack, respond }) => {
 ```
 /zizik-isssatellites
 ```
-Get real-time coordinates of the International Space Station!
+Get coordinates to ISS thats all
 
 **Response:**
 ```
@@ -185,7 +185,7 @@ app.command("/zizik-isssatellites", async ({ command, ack, respond }) => {
 ```
 /zizik-help
 ```
-See a complete list of all available commands.
+Help is just simply help it helps you out with commands!
 
 ## 🛠️ Tech Stack
 
