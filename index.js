@@ -24,7 +24,7 @@ app.command("/dsb-zizikping", async ({ command, ack, respond }) => {
   console.log("bot is running")
 })();
 //this is frm tutorial but it is mostly modified
-app.command("/dsb-zizikhelp", async ({ ack, respond }) => {
+app.command("/dsb-help", async ({ ack, respond }) => {
   await ack();
   await respond({
     text:
@@ -33,6 +33,8 @@ app.command("/dsb-zizikhelp", async ({ ack, respond }) => {
 /dsb-zizikcatfact - Get a cat fact
 /dsb-zizikjoke - Get a random joke
 /dsb-translatetozizikslanguage - Translate text to Ziziks language
+/dsb-ziziktranslator - first specify you language and leave a space after it! Type anything you want after that.
+/dsb-isssatelites
 `
   });
 });
@@ -83,14 +85,14 @@ app.command("/dsb-translatetozizikslanguage", async ({ command, ack, respond }) 
   }
 });
 //this makes you translate something into any language
-app.command("/dsb-zizikstranslator", async ({ command, ack, respond }) => {
+app.command("/dsb-ziziktranslator", async ({ command, ack, respond }) => {
   await ack();
 
   if(!command.text) {
     await respond({ text: "Type something to translate" });
     return;
   }
-  //language choosing used AI because i didnt know how to make this but i now undesrstand absolutely what it does and how!
+  //language choosing
   //these two trim the text to the first space
   const trim = command.text.trim();
   const space =trim.indexOf(' ');
@@ -109,6 +111,17 @@ app.command("/dsb-zizikstranslator", async ({ command, ack, respond }) => {
     await respond({ text: `Translation: ${result.text}` });
   } catch (err) {
     await respond({ text: "I didnt know how but im unable to translate that" });
+  }
+});
+//this tells you ISS location
+app.command("/dsb-isssatellites", async ({ command, ack, respond }) => {
+  await ack(); 
+
+  try {
+  const response = await axios.get("https://api.wheretheiss.at/v1/satellites/25544")
+  await respond({ text: `ISS Location: ${response.data.latitude}, ${response.data.longitude}` });
+  } catch (err) {
+    await respond({ text: "I didnt know how but im unable to get ISS location" });
   }
 });
 
