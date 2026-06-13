@@ -51,13 +51,16 @@ Get your latency so you know how fast your bot communicates or if there are any 
 🏓 Pong!
 ⚡ Latency: 1ms
 ```
+<img width="257" height="107" alt="Snímek obrazovky 2026-06-13 183044" src="https://github.com/user-attachments/assets/6fddaa73-0017-4b1f-9215-8004d85ad3ba" />
 
----
 
 ### 🐱 Cat Facts - Random Cat Trivia
 ```
 /zizik-catfact
 ```
+<img width="378" height="83" alt="Snímek obrazovky 2026-06-13 183122" src="https://github.com/user-attachments/assets/9d3a3350-48f3-4d7b-92e4-75585726e68b" />
+
+
 Some random catfact for your day!
 
 ### 😂 Jokes - Random Humor
@@ -71,8 +74,8 @@ Random joke to make your family laugh!
 Why don't scientists trust atoms?
 Because they make up everything!
 ```
+<img width="388" height="97" alt="Snímek obrazovky 2026-06-13 183158" src="https://github.com/user-attachments/assets/f26cee0e-9ef0-4d05-8732-d71c6689acd9" />
 
----
 
 ### 🇨🇿 Translate to Czech
 ```
@@ -84,6 +87,7 @@ Translate any text into Czech automatically becasue why not?
 ```
 In my (:flag-cz:) language it is: Ahoj světe
 ```
+<img width="307" height="52" alt="Snímek obrazovky 2026-06-13 182954" src="https://github.com/user-attachments/assets/706340ff-587f-4af0-91ba-a5cb8faafb22" />
 
 **Code Snippet:**
 ```javascript
@@ -123,6 +127,7 @@ Translation: こんにちは世界
 /zizik-translator de Hello world             # German
 Translation: Hallo Welt
 ```
+<img width="348" height="305" alt="Snímek obrazovky 2026-06-13 182844" src="https://github.com/user-attachments/assets/0953907a-4d6e-4030-83ba-d57c007f92d7" />
 
 **Code Snippet:**
 ```javascript
@@ -186,6 +191,7 @@ app.command("/zizik-isssatellites", async ({ command, ack, respond }) => {
 /zizik-help
 ```
 <img width="773" height="204" alt="Snímek obrazovky 2026-06-13 180021" src="https://github.com/user-attachments/assets/6bbb9758-b76b-4a69-bafc-a742ec361447" />
+
 Help is just simply help it helps you out with commands!
 
 ## 🛠️ Tech Stack
