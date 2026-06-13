@@ -167,6 +167,8 @@ Get coordinates to ISS thats all
 ISS Location: 51.6442, -0.3354
 (Latitude, Longitude)
 ```
+<img width="532" height="70" alt="Snímek obrazovky 2026-06-13 183309" src="https://github.com/user-attachments/assets/3c761646-ba5d-4f33-bcd3-68472f2b794c" />
+
 
 **Code Snippet:**
 ```javascript
