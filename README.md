@@ -1,21 +1,21 @@
-# 🤖 Zizik Slack Bot
+# Zizik Slack Bot
 
-A fun and powerful Slack bot built with Node.js that brings utility, humor, and real-time information to your workspace!
+A okay slackbot that took me a long time to build and turned out okay!
 
-## ✨ Features
+## Features
 
 - 🏓 **Latency Checker** - Monitor bot responsiveness
 - 🐱 **Cat Facts** - Get random cat facts on demand
 - 😂 **Jokes** - Brighten up your day with random jokes
-- 🌍 **Translation** - Translate to any language or to Czech
+- 🌍 **Translations** - Translate to any language or to Czech
 - 🛰️ **ISS Tracker** - Track the International Space Station location in real-time
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js 14+
 - Slack App with Bot Token
-- `.env` file with tokens
+- `tokens.env` file with tokens
 
 ### Installation
 
@@ -30,11 +30,12 @@ Create a `tokens.env` file:
 SLACK_BOT_TOKEN=xoxb-your-token-here
 SLACK_APP_TOKEN=xapp-your-token-here
 ```
+Everything is in the tutorial for slackbot!
 
 ### Run the Bot
 
 ```bash
-node app.js
+node index.js
 ```
 
 ## 📋 Commands
@@ -48,7 +49,7 @@ Get real-time latency measurements to ensure your bot is running smoothly.
 **Response:**
 ```
 🏓 Pong!
-⚡ Latency: 45ms
+⚡ Latency: 1ms
 ```
 
 ---
@@ -58,21 +59,6 @@ Get real-time latency measurements to ensure your bot is running smoothly.
 /zizik-catfact
 ```
 Learn a new interesting fact about cats!
-
-**Code Snippet:**
-```javascript
-app.command("/zizik-catfact", async ({ ack, respond }) => {
-  await ack();
-  try {
-    const response = await axios.get("https://catfact.ninja/fact");
-    await respond({ text: `Cat Fact:\n${response.data.fact}` });
-  } catch (err) {
-    await respond({ text: "Failed to fetch a cat fact." });
-  }
-});
-```
-
----
 
 ### 😂 Jokes - Random Humor
 ```
@@ -90,13 +76,13 @@ Because they make up everything!
 
 ### 🇨🇿 Translate to Czech
 ```
-/zizik-translatetomylanguage <text>
+/zizik-translatetomylanguage Hello world - this is exymple
 ```
 Translate any text into Czech automatically.
 
-**Example:**
+**Output:**
 ```
-/zizik-translatetomylanguage Hello world
+In my (:flag-cz:) language it is: Ahoj světe
 ```
 
 **Code Snippet:**
@@ -219,7 +205,7 @@ See a complete list of all available commands.
 
 ## 📝 License
 
-MIT
+No license
 
 ## 👨‍💻 Author
 
