@@ -108,7 +108,7 @@ app.command("/dsb-zizikstranslator", async ({ command, ack, respond }) => {
     const result = await translate(textToTranslate, { to: lang });
     await respond({ text: `Translation: ${result.text}` });
   } catch (err) {
-    await respond({ text: "Failed to translate the text." });
+    await respond({ text: "I didnt know how but im unable to translate that" });
   }
 });
 
